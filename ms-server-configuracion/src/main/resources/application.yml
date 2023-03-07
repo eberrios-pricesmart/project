@@ -7,8 +7,19 @@ spring:
 
   profiles:
     active: native
+#  cloud:
+#    config:
+#      server:
+#        native:
+#          searchLocations: file:///D:/Galaxy/Proyecto/ms-server-config-data
+
   cloud:
     config:
       server:
-        native:
-          searchLocations: file:///D:/Galaxy/Proyecto/ms-server-config-data
+        git:
+          uri: https://github.com/eberrios-pricesmart/project.git
+          search-paths: ms-server-config-data
+          username: ${USER_NAME}
+          password: ${USER_PASSWORD}
+          default-label: master
+          cloneOnStart: true
