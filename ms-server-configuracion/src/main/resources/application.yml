@@ -5,21 +5,21 @@ spring:
   application:
     name: ms-server-configuracion
 
-#  profiles:
-#    active: native
-#  cloud:
-#    config:
-#      server:
-#        native:
-#          searchLocations: file:///D:/Galaxy/Proyecto/ms-server-config-data
-
+  profiles:
+    active: native
   cloud:
     config:
       server:
-        git:
-          uri: https://github.com/eberrios-pricesmart/project.git
-          search-paths: ms-server-config-data
-          username: ${USER_NAME}
-          password: ${USER_PASSWORD}
-          default-label: master
-          cloneOnStart: true
+        native:
+          searchLocations: file:///D:/Galaxy/Proyecto/ms-server-config-data
+
+#  cloud:
+#    config:
+#      server:
+#        git:
+#          uri: https://github.com/eberrios-pricesmart/project.git
+#          search-paths: ms-server-config-data
+#          username: ${USER_NAME}
+#          password: ${USER_PASSWORD}
+#          default-label: master
+#          cloneOnStart: true
