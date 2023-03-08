@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: ms-server-api-gateway
+
+  config:
+    import: optional:configserver:http://localhost:9090

@@ -1,11 +1,11 @@
 server:
-  port: 8081
+  port: 8083
 
 spring:
   jpa:
     database-platform: org.hibernate.dialect.MySQLDialect
   datasource:
-    url: jdbc:mysql://localhost:3306/msfacturaciongestionclientes?useUnicode=true&characterEncoding=utf8&useSSL=false&allowPublicKeyRetrieval=true
+    url: jdbc:mysql://localhost:3306/msfacturaciongestionfacturas?useUnicode=true&characterEncoding=utf8&useSSL=false&allowPublicKeyRetrieval=true
     username: root
     password: root
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -16,7 +16,6 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:9091/eureka
 
-#Metrics related configurations
 management:
   endpoint:
     metrics:
