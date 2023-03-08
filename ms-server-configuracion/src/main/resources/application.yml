@@ -5,8 +5,8 @@ spring:
   application:
     name: ms-server-configuracion
 
-  profiles:
-    active: native
+#  profiles:
+#    active: native
 #  cloud:
 #    config:
 #      server:
